@@ -16,5 +16,7 @@ router.get('/example/mlogin', function(req, res) {
 router.get('/mindex', function(req, res) {
     res.render('mindex.html');
 });
-
+router.get('/example/sockettest', function(req, res) {
+    res.render('client.html');
+});
 module.exports = router;

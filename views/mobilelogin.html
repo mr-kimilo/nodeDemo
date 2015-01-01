@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="/css/style-dazhong.css"/>
+</head>
+<body>
+<div id="section_login">
+    <section>
+        <header>
+            <div class="header-box">
+                <a id="J_cancel" href="javascript:;" class="new-btn new-btn-orange new-btn-back">
+                    <b class="caret"></b>返回
+                </a>登录
+                <a id="J_regbtn" href="http://m.dianping.com/reg/mquickreg?redir=" title="注册" class="new-btn new-btn-orange my-cancel">注册</a>
+            </div>
+        </header>
+        <ul class="login-tabs">
+            <li class="active"><a href="#" title="">账号登录</a></li>
+            <li><a id="J_mloginbtn" href="#" title="">短信验证码登录</a></li>
+        </ul>
+        <!--登录-->
+        <div id="dp_banner"></div>
+        <form id="J_login_form">
+            <div class="login-frame verification-login">
+                <p id="account_err" class="err-holder" style="display:none"></p>
+                <ul>
+                    <li>
+                        <p class="input-box">
+                            <i class="input-desc desc-icon i-user"></i>
+                            <input id="J_username" name="username" class="default" placeholder="手机号/邮箱/用户名" type="text">
+                        </p>
+                    </li>
+                    <li>
+                        <p class="input-box">
+                            <i class="input-desc desc-icon i-pwd"></i>
+                            <input id="J_password" name="password" class="default" placeholder="请输入密码" type="password">
+                        </p>
+
+                    </li>
+                    <li id="captcha_box" style="">
+                        <p class="input-box prov-box">
+                            <input id="J_vcode" name="validate" class="default log-prov" placeholder="请输入右侧验证码" type="text">
+                        </p>
+                        <a class="proving"><img src="" onclick="_hip.push(['mv', {module:'0_login_m_pass',action:'click',index:1}])" id="J_captcha" height="39" width="120"></a>
+                    </li>
+                </ul>
+                <div class="login-btn">
+                    <input id="J_submit" onclick="_hip.push(['mv', {module:'0_login_m_pass',action:'click',index:2,time:new Date().getTime()-et}])" value="登录" class="icon-btn b-2 margin-lt-2" type="button">
+                </div>
+                <p class="forget"><a href="http://m.dianping.com/resetpassword">忘记密码？</a></p>
+            </div>
+        </form>
+        <!--登录 end-->
+    </section>
+</div>
+<!--内容 end-->
+</body>
+</html>
